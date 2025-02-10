@@ -77,7 +77,7 @@ function playRound(humanChoice, computerChoice) {
         // DISPLAY YOU LOSE
         console.log("You chose " + humanChoice + ", Computer chose " + computerChoice + ", YOU LOSE!")
         // DISPLAY and update scores
-        humanScore += 1;
+        computerScore += 1;
         console.log("Human: " + humanScore + ", Computer: " + computerScore)
     }
 
