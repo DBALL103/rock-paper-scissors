@@ -2,16 +2,29 @@
 
 // INITIALISE variables in global 
 let humanScore = 0;
-let computerScore
+let computerScore = 0;
 
 // Create new function getComputerChoice
-// GENERATE random number between 0-2
-// IF generated number == 0
-    // RETURN "Rock"
-// ELSE IF generated number == 1
-    // RETURN "Paper"
-// ELSE
-    // RETURN"Scissors"
+function getComputerChoice() {
+    // GENERATE random number between 0-2
+    let cptCh = Math.floor(Math.random() * 3);
+    // IF generated number == 0
+    if (cptCh == 0) {
+        // RETURN "Rock"
+        return "Rock"
+    }
+    // ELSE IF generated number == 1
+    else if (cptCh == 1) {
+        // RETURN "Paper"
+        return "Paper"
+    }
+    // ELSE
+    else {
+        // RETURN"Scissors"
+        return "Scissors"
+    }
+
+}
 
 // Create new function getHumanChoice
 // INPUT user choice (rock, paper, scissors)
